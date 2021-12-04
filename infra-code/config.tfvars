@@ -6,6 +6,7 @@ private_subnet_cidr_blocks  = ["10.68.3.0/24", "10.68.4.0/24"]
 additional_tags             = { Envs = "production" }
 application_name            = "dodo"
 
+
 instances = {
     first  = {
         associate_public_ip_address = true
