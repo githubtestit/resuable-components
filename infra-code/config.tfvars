@@ -15,5 +15,14 @@ instances = {
         instance_type               = "t2.micro"
         monitoring                  = false
         instance_mode               = "public"
+        root_block_device           = [{
+    		delete_on_termination = true
+    		encrypted             = true
+    		iops                  = 3000
+    		throughput            = 125
+    		volume_size           = 250
+    		volume_type           = "gp3"
+	   }			
+	]
     }
 }
